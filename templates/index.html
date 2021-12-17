@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <script type="text/javascript">
+    function validar() {
+      //obteniendo el valor que se puso en el campo text del formulario
+      var usernameForm = document.getElementById("Username").value;
+      var passwordForm = document.getElementById("Password").value;
+      //la condición
+      if (usernameForm.length == 0 || /^\s+$/.test(usernameForm)) {
+        alert('El campo de Username esta vacío!');
+      return false;
+      }
+      if (passwordForm.length == 0 || /^\s+$/.test(passwordForm)) {
+        alert('El campo de Password esta vacío!');
+      return false;
+      }
+      return true;
+    }
+  </script>
+  <head>
+    <meta charset="utf-8">
+    <title>Travel with me | SamanthaRojasH</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/master.css') }}">
+  </head>
+  <body>    
+    <div class="login-box">
+      <img src="/static/img/logo.png" class="avatar" alt="Avatar Image">
+      <h1>Login Here</h1>
+      <form name ="formularioLogin" class="formularioTipo1" method="POST" action="{{url_for('procesar')}}" onsubmit="return validar()">
+        <label for="usernameL">Immersive virtual reality (immersive VR) is the presentation of an artificial environment that replaces users' real-world surroundings convincingly enough that they are able to suspend disbelief and fully engage with the created environment. Immersiveness is an important element of virtual reality applications, such as VR gaming and VR therapy.</label>
+        <label for="passwordL">Immersiveness is usually considered on a scale or along a continuum, from least immersive to fully immersive. Typically, user engagement will vary accordingly, although to some extent dependent on individual differences. An inadequately immersive environment will not engage the user, while one that completely replicated the real world could have unpredictable psychological effects. To date, the latter scenario is not an issue because that level of immersiveness has not been achieved.</label>
+        <!--<a href="#">Lost your Password?</a><br>
+        <a href="#">Don't have An account?</a> Futura implementación
+        -->
+      </form>
+    </div>
+  </body>
+</html>
