@@ -1,38 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <script type="text/javascript">
-    function validar() {
-      //obteniendo el valor que se puso en el campo text del formulario
-      var usernameForm = document.getElementById("Username").value;
-      var passwordForm = document.getElementById("Password").value;
-      //la condición
-      if (usernameForm.length == 0 || /^\s+$/.test(usernameForm)) {
-        alert('El campo de Username esta vacío!');
-      return false;
-      }
-      if (passwordForm.length == 0 || /^\s+$/.test(passwordForm)) {
-        alert('El campo de Password esta vacío!');
-      return false;
-      }
-      return true;
-    }
-  </script>
   <head>
     <meta charset="utf-8">
-    <title>Travel with me | SamanthaRojasH</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/master.css') }}">
+    <title>Travel with us | @ETTogether</title>
+    <link rel="stylesheet" href="/static/css/master.css">
   </head>
-  <body>    
+  <body>
+    <br>
+    <br>    
     <div class="login-box">
-      <img src="/static/img/logo.png" class="avatar" alt="Avatar Image">
-      <h1>Login Here</h1>
-      <form name ="formularioLogin" class="formularioTipo1" method="POST" action="{{url_for('procesar')}}" onsubmit="return validar()">
+      <img src="/static/resources/logo.png" class="avatar" alt="Avatar Image">
+      <h1>Travel with us</h1>
+      <form name ="formularioLogin" class="formularioTipo1" method="POST">
         <label for="usernameL">Immersive virtual reality (immersive VR) is the presentation of an artificial environment that replaces users' real-world surroundings convincingly enough that they are able to suspend disbelief and fully engage with the created environment. Immersiveness is an important element of virtual reality applications, such as VR gaming and VR therapy.</label>
+        <br>
         <label for="passwordL">Immersiveness is usually considered on a scale or along a continuum, from least immersive to fully immersive. Typically, user engagement will vary accordingly, although to some extent dependent on individual differences. An inadequately immersive environment will not engage the user, while one that completely replicated the real world could have unpredictable psychological effects. To date, the latter scenario is not an issue because that level of immersiveness has not been achieved.</label>
-        <!--<a href="#">Lost your Password?</a><br>
-        <a href="#">Don't have An account?</a> Futura implementación
-        -->
+        <a href="https://whatis.techtarget.com/definition/immersive-virtual-reality-immersive-VR">By Ivy Wigmore, Content Editor</a>    
+        <img src="/static/resources/1.jpeg" width="1140" height="600">    
+        <label for="OtherpasswordL">In early 2015, YouTube began offering 360-degree video uploading and viewing on either a computer or Android mobile apps. Later that year, Facebook joined the 360 video revolution and other less well-known companies are joining the frenzy. 360, or virtual reality videos, allow users to pan around the video so it can be viewed from any angle.</label>
+        <br>
+        <label for="Other2passwordL">360 videos are created with special cameras that record an event or a scene from all angles. When viewing on a computer, a mouse is used to pan around the video, while on a smartphone, the video view can be controlled by either a swipe of a finger or simply by physically moving around. VR headsets are no longer required to watch 360 videos.</label>
+        <a href="https://www.smdvr.com/360-video-production/youtube-facebook-360/">By SMDVR</a>
+        <h1>Open the gifts</h1>
+        <center>
+        <a title="gift1" href="{{url_for('procesarImg')}}" ><img src="/static/resources/gift.gif" alt="gift1" width="200" height="200" /></a>  
+        <a title="gift2" href="{{url_for('procesarImg2')}}"><img src="/static/resources/gift.gif" alt="gift2" width="200" height="200" /></a> 
+        </center>
       </form>
-    </div>
+    </div> 
   </body>
 </html>

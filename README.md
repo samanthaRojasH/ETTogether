@@ -1,36 +1,17 @@
-# Upload Images💚 :) [![@SamanthaRojasH](https://i.imgur.com/skj3q6L.png?2 "@SamanthaRojasH")](https://i.imgur.com/skj3q6L.png?2 "@SamanthaRojasH")
+# @ETTogether💛💛💛💛 :) [![@SamanthaRojasH](https://i.imgur.com/skj3q6L.png?2 "@SamanthaRojasH")](https://i.imgur.com/skj3q6L.png?2 "@SamanthaRojasH")
 
-Este es el primer proyecto que he logrado desarrollar con los conocimientos adquiridos en [Platzi](https://platzi.com/ "Platzi") y en otras fuentes de conocimiento. Está desarrollado con Flask en el lenguaje Python con conexión a MongoDB. Este proyecto fue desarrollado para contribuir con mi trabajo como voluntaria en la comunidad Scrum Latam, a la cual me siento muy orgullosa de pertenecer.
+This is a project for my study group of @ETTogether that I have achieved to develop with the knowledge acquired at [Platzi](https://platzi.com/ "Platzi") and other sources of knowledge. It is developed with Flask in the Python language. This project was developed like a gift of the secret Santa and Christmas party of 2021.
 
 
-> Si quieres conocer un poco más de mi, puedes hacerlo en:
+> If you want to meet a little more about me, you can do it in:
 >
 > - [LinkedIn Sandra](https://www.linkedin.com/in/sandra-rojas-herran/ "LinkedIn")
 > - [Twitter @SamanthaRojasH](https://twitter.com/SamanthaRojasH "Twitter @SamanthaRojasH")
 
-## Recomendaciones para usar el proyecto
-* Crear nuestro entorno virtual en la carpeta del proyecto.
-* Crea tu archivo config.ini, según la configuración de mongoDB:
+## Recommendations to use the project
+* Create a virtual environment in the project's directory.
 
-```
-; config.ini
-[DEFAULT]
-CONNECTION_DB = connection_string
-DB = db
-COLLECTION = db_collection
-    
-[TESTING]
-CONNECTION_DB = connection_string_testing
-DB = db_testing
-COLLECTION = db_collection_testing
-    
-[PRODUCTION]
-CONNECTION_DB = connection_string_production
-DB = db_production
-COLLECTION = db_collection_production
-```
-
-* Si lo vas en tu ambiente local sigue, ejecuta los siguientes comandos, si eres SO Windows:
+* If you use in your local environment, run the next commands, if you have Windows OS:
 
 ```
 	- set FLASK_APP=./app.py
@@ -38,4 +19,4 @@ COLLECTION = db_collection_production
 	- flask run
 ```
 
-> **Haz tus proyectos con amor y con pasión y lograrás grandes éxitos.**
+> **Do your projects with love and passion, and you will achieve great successes 💛💛💛💛**

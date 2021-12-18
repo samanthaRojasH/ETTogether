@@ -1,15 +1,15 @@
 body {
   margin: 0;
   padding: 0;
-  background: url(bg.jpeg) no-repeat center top;
+  background: url(/static/resources/bg.jpeg) no-repeat center top;
   background-size: cover;
   font-family: sans-serif;
   height: 100vh;
 }
 
 .login-box {
-  width: 600px;
-  height: 600px;
+  width: 1200px;
+  height: 1400px;
   background: #000;
   color: #fff;
   top: 50%;
